@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Montserrat:ital,wght@1,500&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #fff;
+}
+.navy {
+  margin-top: 30px;
+}
+h4 {
+  font-family: "montserrat", sans-serif;
+  font-size: 2.2rem;
+  float: left;
+  margin: 0 70px 0;
+  padding: 0;
+  /*color: #D77FA1;*/
+  color: #baabda;
+
+  /*padding: 10px 30px;
+    background: linear-gradient(to right, #ffff00 0%, #ff3399);
+    box-shadow: 0 4px 5px 0.5px rgba(0,0,0,.3);
+    border-radius: 50px;*/
+}
+h4 label {
+  /*color: #BAABDA;*/
+  color: #d77fa1;
+}
+.srch {
+  position: relative;
+  float: right;
+  padding: 0;
+  margin-right: 70px;
+  display: inline-flex;
+}
+.srch input {
+  border-radius: 50px;
+  height: 50px;
+  width: 410px;
+  font-family: "montserrat", sans-serif;
+  text-align: center;
+  margin-right: 10px;
+  box-shadow: 0 4px 5px 0.5px rgba(0, 0, 0, 0.1);
+  /*border: none;*/
+  border: 1px solid gray;
+}
+.srch button {
+  font-family: "montserrat", sans-serif;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 1rem;
+  /*background: linear-gradient(to right, #ffff00 0%, #ff3399);*/
+  background: #d6e5fa;
+  box-shadow: 0 2px 3px 0.5px rgba(0, 0, 0, 0.2);
+  /*border: none;*/
+  border: 1px solid gray;
+}
+nav {
+  /*border: 1px solid gray;*/
+  border: none;
+  position: relative;
+  margin: 30px auto 0;
+  width: 200px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50px;
+  font-size: 0;
+  box-shadow: 0 4px 5px 0.5px rgba(0, 0, 0, 0.2);
+}
+nav a {
+  font-family: "montserrat", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #333;
+  text-decoration: none;
+  line-height: 50px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+}
+nav .animation {
+  border: 1px solid gray;
+  /*border: none;*/
+  position: absolute;
+  height: 100%;
+  /*  height: 5px; */
+  top: 0;
+  /*bottom: 0; */
+  z-index: 0;
+  /*background: linear-gradient(to right, #ffff00 0%, #ff3399);*/
+  background: #d6e5fa;
+  border-radius: 50px;
+  transition: all 0.5s ease 0s;
+}
+nav a:nth-child(1) {
+  width: 100px;
+}
+nav .start-home,
+a:nth-child(1):hover ~ .animation {
+  width: 100px;
+  left: 0;
+}
+nav a:nth-child(2) {
+  width: 100px;
+}
+nav a:nth-child(2):hover ~ .animation {
+  width: 100px;
+  left: 100px;
+}
+.bt {
+  margin: 50px 250px 50px 250px;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #baabda;
+}
+.bt-1 {
+  margin: 0px 250px 50px;
+  text-align: center;
+}
+.bt .cl {
+  color: #d77fa1;
+}
+.btn {
+  border: 1px solid #baabda;
+  background: none;
+  padding: 10px 20px;
+  font-size: 30px;
+  font-family: "montserrat";
+  cursor: pointer;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.5);
+}
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #baabda;
+  z-index: -1;
+  transition: 0.8s;
+}
+.btn1::before {
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+.btn1:hover::before {
+  height: 180%;
+}
+.btn > a {
+  text-decoration: none;
+  color: #baabda;
+}
+.btn > a:hover {
+  color: #fff;
+}

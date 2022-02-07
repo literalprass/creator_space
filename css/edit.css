@@ -1,0 +1,15 @@
+form {
+    max-width: 550px;
+    margin: 50px auto 0;
+    border: 1px solid gray;
+    padding: 50px;
+    box-shadow: 0 4px 5px 0.5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+button {
+    width: 49%;
+}
+form h2 {
+    margin: 0 auto 30px;
+    text-align: center;
+}
